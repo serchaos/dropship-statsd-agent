@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package dropship.agent.statsd;
 
 import dagger.ObjectGraph;
@@ -28,6 +29,13 @@ import java.util.Properties;
  */
 public class StatsdAgent extends BaseAgent {
 
+  /**
+   * Invoked by the Java VM when this .jar file is given to the {@code -javaagent} argument.
+   *
+   * This method sets up an instance of {@code StatsdAgent} and uses
+   * {@link BaseAgent#premain(String, java.lang.instrument.Instrumentation, dropship.agent.BaseAgent)} to
+   * wire it up to Dropship.
+   */
   public static void premain(String agentArgument, Instrumentation instrumentation) {
     BaseAgent.premain(agentArgument, instrumentation, new StatsdAgent());
   }

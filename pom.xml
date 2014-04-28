@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+
 <!--
   ~ Copyright (C) 2014 zulily, Inc.
   ~
@@ -35,7 +36,6 @@
   <url>https://github.com/zulily/dropship-statsd-agent</url>
 
   <properties>
-    <guava.version>16.0.1</guava.version>
     <javax.inject.version>1</javax.inject.version>
     <dagger.version>1.2.0</dagger.version>
     <junit.version>4.11</junit.version>
@@ -72,11 +72,6 @@
       <artifactId>dropship-agent</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
-    <!-- dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-      <version>${guava.version}</version>
-    </dependency -->
     <dependency>
       <groupId>javax.inject</groupId>
       <artifactId>javax.inject</artifactId>
